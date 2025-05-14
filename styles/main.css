@@ -58,8 +58,15 @@ h2 {
     padding: 32px 28px;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(53,66,74,0.08);
-    transition: box-shadow 0.3s, transform 0.2s;
+    transition: box-shadow 0.3s, transform 0.2s, opacity 0.7s, transform 0.7s;
     position: relative;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section:hover {
@@ -89,6 +96,32 @@ h2 {
 
 .section li:hover {
     background: #f0f8ff;
+}
+
+.skills-list li {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #35424a;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.15);
+    opacity: 0;
+    animation: fadeInTooltip 0.3s forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes fadeInTooltip {
+    to { opacity: 1; }
 }
 
 .social-links {
@@ -123,6 +156,15 @@ h2 {
     color: #35424a;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 4px 16px rgba(109,213,237,0.15);
+}
+
+.social-links a.clicked {
+    animation: pop 0.3s;
+}
+
+@keyframes pop {
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
 }
 
 footer {
