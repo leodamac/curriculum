@@ -1,160 +1,155 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f6f8fa;
-    color: #222;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es"> 'Segoe UI', Arial, sans-serif;
+<head>ckground: #f6f8fa;
+    <meta charset="UTF-8">
+    <meta name="description" content="Currículum Vitae de Leonardo Macías, estudiante de Computación en ESPOL.">
+    <meta name="keywords" content="Currículum, Leonardo Macías, Computación, ESPOL, Proyectos, Tecnologías">
+    <meta name="author" content="Leonardo Macías">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Currículum Vitae - Leonardo Macías</title>
+</head>
+<body>
+    <header>ent {
+        <div class="header-content">
+            <div>nt: space-between;
+                <h1>Leonardo Macías</h1>
+                <p>Estudiante de Computación | ESPOL</p>
+            </div>;
+            <nav>em;
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/leodamac" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/leodamac" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:leodamac@espol.edu.ec" target="_blank" title="Correo"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </nav>: 2px;
+        </div>w: 1px 2px 8px rgba(0,0,0,0.15);
+    </header>n: color 0.3s;
+    
+    <main class="container">
+        <div class="columns">
+            <section id="proyectos" class="section">
+                <h2>Proyectos Destacados</h2>
+                <ul class="proyectos-list">
+                    <li class="proyecto-item" data-id="1">
+                        <img src="https://raw.githubusercontent.com/leodamac/Proyecto-Redes/main/Grupo7_RedesDeDatos/src/main/resources/tcpip.jpg" alt="Simulación OSI" class="miniatura">
+                        <span><i class="fab fa-java"></i> Sistema de simulación OSI</span>
+                    </li>
+                    <li class="proyecto-item" data-id="2">
+                        <img src="https://private-user-images.githubusercontent.com/105889369/443815553-aaedf306-183d-405d-a0d0-ada5f48f2296.png" alt="Marcación de Asistencia" class="miniatura">
+                        <span><i class="fab fa-react"></i> <i class="fab fa-js"></i> Sistema de Marcación de Asistencia</span>
+                    </li>
+                    <li class="proyecto-item" data-id="3">
+                        <img src="https://github.com/user-attachments/assets/0822681b-52a1-4d89-a194-cdfaa5cd4ba1" alt="Tiempos verbales inglés" class="miniatura">
+                        <span><i class="fab fa-react"></i> Página de tiempos verbales en inglés</span>
+                    </li>
+                </ul>
+            </section>
 
-header {
-    background: linear-gradient(90deg, #0077b6 60%, #00b4d8 100%);
-    color: #fff;
-    padding: 2rem 0 1rem 0;
-    box-shadow: 0 2px 8px #0001;
-}
+            <!-- Modal para mostrar detalles del proyecto -->
+            <div id="modalProyecto" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>    margin: 2rem auto;
+                    <div id="modalBody"></div>
+                </div>
+            </div>
+            
+            <section id="tecnologias" class="section">
+                <h2>Tecnologías</h2>
+                <ul class="tech-list">
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                    <li><i class="fas fa-code"></i> C</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fab fa-angular"></i> Angular</li>
+                    <li><i class="fas fa-database"></i> MySQL</li>
+                    <li><i class="fas fa-database"></i> PostgreSQL</li>
+                    <li><i class="fab fa-git-alt"></i> Git</li>
+                    <li><i class="fab fa-figma"></i> Figma</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                </ul>
+                <h3>En los proyectos:</h3>
+                <ul>
+                    <li><strong>Java:</strong> Lógica y UI en simulación OSI</li>
+                    <li><strong>React:</strong> UI dinámica en asistencia</li>ateY(0);
+                    <li><strong>TypeScript:</strong> Robustez en frontend</li>
+                    <li><strong>Firebase:</strong> Autenticación y datos en tiempo real</li>
+                    <li><strong>HTML/CSS:</strong> Estructura y estilos</li>
+                    <li><strong>Git:</strong> Control de versiones</li>
+                    <li><strong>VS Code:</strong> Editor principal</li>
+                </ul>
+            </section>
+        </div>
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
+        <section id="educacion" class="section">
+            <h2>Educación</h2>
+            <ul>
+                <li>.section ul {
+                    <h3>Ingeniería en Computación</h3>
+                    <p class="fecha">Escuela Superior Politécnica del Litoral (ESPOL) - En curso</p>
+                </li>
+            </ul>
+        </section>
 
-header h1 {
-    margin: 0;
-    font-size: 3em;
-    letter-spacing: 2px;
-    text-shadow: 1px 2px 8px rgba(0,0,0,0.15);
-    transition: color 0.3s;
-}
+        <section id="habilidades" class="section">;
+            <h2>Habilidades</h2>: 8px;
+            <ol class="skills-list">
+                <li><i class="fas fa-users"></i> Trabajo en equipo</li>
+                <li><i class="fas fa-comments"></i> Comunicación efectiva</li>
+                <li><i class="fas fa-lightbulb"></i> Creatividad</li>
+                <li><i class="fas fa-tasks"></i> Organización</li>
+                <li><i class="fas fa-brain"></i> Pensamiento crítico</li>
+                <li><i class="fas fa-clock"></i> Gestión del tiempo</li>
+                <li><i class="fas fa-handshake"></i> Adaptabilidad</li>
+                <li><i class="fas fa-user-check"></i> Responsabilidad</li>
+            </ol>
+        </section>
 
-header h1:hover {
-    color: #6dd5ed;
-}
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form id="contactForm">nslateX(-50%);
+                <label for="nombre">Nombre:</label>    background: #35424a;
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+                <p id="formMsg" class="form-msg"></p>
+            </form>
+        </section>
 
-header p {
-    font-size: 1.3em;
-    margin: 10px 0 0 0;
-    letter-spacing: 1px;
-    opacity: 0.9;
-}
+        <section id="ubicacion" class="section">
+            <h2>Ubicación</h2>
+            <p>Guayaquil, Ecuador</p>ooltip {
+            <iframe     to { opacity: 1; }
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-79.922359, -2.220027, -79.882359, -2.180027&amp;layer=mapnik&amp;marker=-2.200027,-79.902359" 
+                style="border:1px solid #ccc; width:100%; height:300px; border-radius:12px;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>;
+        </section>
+    </main>
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-h2 {
-    color: #35424a;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-}
-
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.section {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px #0001;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    flex: 1 1 350px;
-    position: relative;
-    opacity: 0;
-    transform: translateY(40px);
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.section:hover {
-    box-shadow: 0 8px 32px rgba(53,66,74,0.18);
-    transform: translateY(-4px) scale(1.01);
-}
-
-.section h2 {
-    color: #0077b6;
-    margin-top: 0;
-}
-
-.section ul {
-    padding-left: 20px;
-}
-
-.section li {
-    margin-bottom: 18px;
-    transition: background 0.2s, border-radius 0.2s;
-    padding: 8px 12px;
-    border-radius: 8px;
-}
-
-.section li:hover {
-    background: #f0f8ff;
-}
-
-.skills-list li {
-    position: relative;
-}
-
-.tooltip {
-    position: absolute;
-    top: -38px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #35424a;
-    color: #fff;
-    padding: 6px 16px;
-    border-radius: 8px;
-    font-size: 0.95em;
-    white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(53,66,74,0.15);
-    opacity: 0;
-    animation: fadeInTooltip 0.3s forwards;
-    pointer-events: none;
-    z-index: 10;
-}
-
-@keyframes fadeInTooltip {
-    to { opacity: 1; }
-}
-
-.social-links {
-    list-style: none;
-    display: flex;
-    gap: 1.2rem;
-    margin: 0;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-}
-
-.social-links a {
-    color: #fff;
-    font-size: 1.7rem;
-    transition: color 0.2s;
-}
-.social-links a:hover {
-    color: #ffd166;
-}
-
-.social-links a.clicked {
-    animation: pop 0.3s;
-}
-
+    <footer>
+        <p>&copy; 2025 Leonardo Macías. Todos los derechos reservados.</p>
+    </footer>
+    <script>.social-links li {
+    // Animación simple para el formulario inline-block;
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('formMsg').textContent = "¡Gracias por tu mensaje!";s a {
+        document.getElementById('formMsg').style.color = "#27ae60";
+        this.reset();
+    });
+    </script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
 @keyframes pop {
     50% { transform: scale(1.15); }
     100% { transform: scale(1); }
@@ -294,4 +289,55 @@ button:hover {
 @keyframes fadeInModal {
     from { opacity: 0; transform: scale(0.95);}
     to { opacity: 1; transform: scale(1);}
+}
+
+.proyecto-item {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.proyecto-item:hover {
+    background: #e0f7fa;
+}
+
+.miniatura {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 12px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px #0001;
+}
+.proyectos-list {
+    list-style: none;
+    padding: 0;
+}
+.proyecto-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.foto-perfil {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 12px #0002;
+}
+.descripcion-personal {
+    font-size: 1.1em;
+    color: #e0f7fa;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
