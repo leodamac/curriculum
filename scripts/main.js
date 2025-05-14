@@ -1,5 +1,6 @@
 // Animación de entrada de secciones al hacer scroll
 const sections = document.querySelectorAll('.section');
+sections.forEach(section => section.classList.add('visible'));
 const showSection = (entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -23,6 +24,8 @@ document.querySelectorAll('.skills-list li').forEach(li => {
 });
 
 function showTooltip(e) {
+  const oldTooltip = e.target.querySelector('.tooltip');
+  if (oldTooltip) oldTooltip.remove();
   const skill = e.target.textContent;
   const tooltip = document.createElement('span');
   tooltip.className = 'tooltip';
@@ -41,3 +44,57 @@ document.querySelectorAll('.social-links a').forEach(a => {
     setTimeout(() => a.classList.remove('clicked'), 300);
   });
 });
+
+const proyectosData = [
+  {
+    id: 1,
+    titulo: "Sistema de simulación de envío de datos entre diferentes capas",
+    descripcion: "Aplicación que permite visualizar el funcionamiento de las capas del modelo OSI.",
+    tecnologias: "Java",
+    imagen: "https://raw.githubusercontent.com/leodamac/Proyecto-Redes/main/Grupo7_RedesDeDatos/src/main/resources/tcpip.jpg",
+    enlace: "https://github.com/leodamac/Proyecto-Redes"
+  },
+  {
+    id: 2,
+    titulo: "Sistema de Marcación de Asistencia",
+    descripcion: "Plataforma para gestionar asistencias.",
+    tecnologias: "Firebase, TypeScript, React, HTML, CSS",
+    imagen: "https://private-user-images.githubusercontent.com/105889369/443815553-aaedf306-183d-405d-a0d0-ada5f48f2296.png",
+    enlace: "https://github.com/leodamac/Voluntariado"
+  },
+  {
+    id: 3,
+    titulo: "Página para el aprendizaje de los tiempos verbales en inglés",
+    descripcion: "Permite aprender los tiempos verbales en inglés.",
+    tecnologias: "TypeScript, React, HTML, CSS",
+    imagen: "https://github.com/user-attachments/assets/0822681b-52a1-4d89-a194-cdfaa5cd4ba1",
+    enlace: "https://github.com/leodamac/english-class"
+  }
+];
+
+document.querySelectorAll('.proyecto-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const id = parseInt(this.getAttribute('data-id'));
+    const data = proyectosData.find(p => p.id === id);
+    if (data) {
+      document.getElementById('modalBody').innerHTML = `
+        <h3>${data.titulo}</h3>
+        <p><strong>Descripción:</strong> ${data.descripcion}</p>
+        <p><strong>Tecnologías:</strong> ${data.tecnologias}</p>
+        <img src="${data.imagen}" alt="${data.titulo}" style="max-width:100%;border-radius:8px;margin:10px 0;">
+        <p><a href="${data.enlace}" target="_blank">Ver proyecto <i class="fas fa-arrow-up-right-from-square"></i></a></p>
+      `;
+      document.getElementById('modalProyecto').style.display = 'flex';
+    }
+  });
+});
+
+document.querySelector('.close-modal').onclick = function() {
+  document.getElementById('modalProyecto').style.display = 'none';
+};
+window.onclick = function(event) {
+  const modal = document.getElementById('modalProyecto');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
