@@ -1,28 +1,78 @@
-# Currículum Vitae Interactivo
 
-Este proyecto es una página web interactiva que presenta un currículum vitae (CV) de manera clara y accesible. Utiliza tecnologías fundamentales de desarrollo web como HTML y CSS para estructurar el contenido y aplicar buenas prácticas de diseño.
+¡Hola! Soy Leonardo Macías, estudiante de Computación en la Escuela Superior Politécnica del Litoral (ESPOL).
 
-## Estructura del Proyecto
+---
 
-El proyecto contiene los siguientes archivos:
+## 📂 Índice
 
-- **src/index.html**: Página principal del currículum vitae. Incluye la estructura HTML que presenta información relevante como datos personales, experiencia laboral, educación y habilidades. También contiene enlaces a redes sociales y portafolios.
+- [Proyectos](#proyectos)
+- [Tecnologías](#tecnologías)
+- [Capturas de Pantalla](#capturas-de-pantalla)
+- [Contacto](#contacto)
 
-- **src/styles/main.css**: Archivo de estilos CSS que define el diseño y formato de la página HTML, asegurando que el contenido sea visualmente atractivo y accesible.
+---
 
-- **src/assets/favicon.ico**: Ícono que se muestra en la pestaña del navegador al cargar la página web.
+## 🚀 Proyectos
 
-## Instrucciones para Configurar y Visualizar
+### 1. Sistema de simulación de envío de datos entre diferentes capas
+- **Descripción:** Aplicación que permite visualizar el funcionamiento de las capas del modelo OSI.
+- **Tecnologías:** Java
+- **Estado:** 🟢 Finalizado
+- **Enlace:** [Ver proyecto](https://github.com/leodamac/Proyecto-Redes)
 
-1. Clona este repositorio en tu máquina local.
-2. Navega a la carpeta del proyecto.
-3. Abre el archivo `src/index.html` en tu navegador web para visualizar el currículum vitae interactivo.
+### 2. Sistema de Marcación de Asistencia
+- **Descripción:** Plataforma para gestionar asistencias.
+- **Tecnologías:** Firebase, TypeScript, React, HTML, CSS
+- **Estado:** 🟢 Finalizado
+- **Enlace:** [Ver proyecto](https://github.com/leodamac/Voluntariado)
 
-## Tecnologías Utilizadas
+### 3. Página para el aprendizaje de los tiempos verbales en inglés
+- **Descripción:** Permite aprender los tiempos verbales en inglés
+- **Tecnologías:** TypeScript, React, HTML, CSS
+- **Estado:** 🟢 Finalizado
+- **Enlace:** [Ver proyecto](https://github.com/leodamac/english-class)
+---
 
-- HTML
-- CSS
+## 🛠️ Tecnologías
 
-## Contribuciones
+| Lenguajes         | Frameworks/Bibliotecas     | Herramientas     |
+|-------------------|---------------------------|------------------|
+| JavaScript        | React                     | Git              |
+| Python            | Angular                   | Figma            |
+| Java              | MySQL                   | VS Code          |
+| SQL               | PostgreSQL          |                  |
+| C                 |                           |                  |
+---
 
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor abre un issue o envía un pull request.
+### 🛠️ Tecnologías usadas en los proyectos
+
+| Tecnología         | Uso en los proyectos                                                                                   |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| **Java**           | Utilizado para desarrollar la lógica y la interfaz del sistema de simulación de capas del modelo OSI. |
+| **React**          | Creación de la interfaz de usuario dinámica para la plataforma de marcación de asistencia.             |
+| **TypeScript**     | Mejora la robustez y mantenibilidad del frontend en la plataforma de asistencia.                      |
+| **Firebase**       | Autenticación y almacenamiento en tiempo real de los datos de asistencia.                             |
+| **HTML/CSS**       | Estructura y estilos de la plataforma web de asistencia.                                              |
+| **Git**            | Control de versiones y colaboración en ambos proyectos.                                               |
+| **VS Code**        | Editor principal utilizado para el desarrollo de los proyectos.                                       |
+
+---
+
+---
+
+## 🖼️ Capturas de Pantalla
+
+### Sistema de simulación de envío de datos entre diferentes capas
+![TCP/IP Model with Physical Layer](https://github.com/leodamac/Proyecto-Redes/blob/main/Grupo7_RedesDeDatos/src/main/resources/tcpip.jpg)
+
+### Página para el aprendizaje de los tiempos verbales en inglés
+![image](https://github.com/user-attachments/assets/0822681b-52a1-4d89-a194-cdfaa5cd4ba1)
+
+
+---
+
+## 📬 Contacto
+
+- **Correo institucional:** [leodamac@espol.edu.ec](mailto:leodamac@espol.edu.ec)
+- **LinkedIn:** [linkedin.com/in/leodamac](https://linkedin.com/in/leodamac)
+- **GitHub:** [github.com/leodamac](https://github.com/leodamac)
