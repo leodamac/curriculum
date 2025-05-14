@@ -59,7 +59,7 @@ const proyectosData = [
     titulo: "Sistema de Marcación de Asistencia",
     descripcion: "Plataforma para gestionar asistencias.",
     tecnologias: "Firebase, TypeScript, React, HTML, CSS",
-    imagen: "https://private-user-images.githubusercontent.com/105889369/443815553-aaedf306-183d-405d-a0d0-ada5f48f2296.png",
+    imagen: "https://private-user-images.githubusercontent.com/105889369/443815553-aaedf306-183d-405d-a0d0-ada5f48f2296.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyNTE2ODIsIm5iZiI6MTc0NzI1MTM4MiwicGF0aCI6Ii8xMDU4ODkzNjkvNDQzODE1NTUzLWFhZWRmMzA2LTE4M2QtNDA1ZC1hMGQwLWFkYTVmNDhmMjI5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQxOTM2MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYTc5N2YwM2I2YmVmNzJlZjc0MjcxYWQ0ODBjMGJlMGEzYmU1NjUyZWJhNjAzYWVmYWU1OTI0YzEwZGFiNjBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TkBOJlJCFLWY2mZX5Ye-UDfuBCvSiigFou8eOa-0H3U",
     enlace: "https://github.com/leodamac/Voluntariado"
   },
   {
