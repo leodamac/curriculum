@@ -264,6 +264,51 @@ button:hover {
     font-weight: bold;
 }
 
+.contacto-metodo {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.radio-option label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    min-width: 120px;
+}
+
+.contacto-input {
+    flex: 1;
+    display: none;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.radio-option input[type="radio"]:checked ~ .contacto-input {
+    display: block;
+}
+
+.required {
+    color: #e74c3c;
+}
+
 @media (max-width: 900px) {
     .columns {
         flex-direction: column;

@@ -98,3 +98,22 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const tipoContacto = formData.get('tipo-contacto');
+    let mensaje = "¡Gracias por tu mensaje!";
+    
+    if (tipoContacto) {
+        const contactoValor = formData.get(tipoContacto);
+        if (contactoValor) {
+            mensaje += ` Te contactaré a través de ${tipoContacto}: ${contactoValor}`;
+        }
+    }
+    
+    document.getElementById('formMsg').textContent = mensaje;
+    document.getElementById('formMsg').style.color = "#27ae60";
+    this.reset();
+});
