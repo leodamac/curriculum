@@ -506,42 +506,44 @@ button:hover {
 }
 
 .testimonio {
-    background: var(--white);
+    background: #ffffff;
     padding: var(--spacing-md);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
+    border: 1px solid #e1e8ed;
 }
 
 .testimonio:hover {
     transform: translateY(-5px);
+    border-color: #2c3e50;
 }
 
 .testimonio blockquote {
     font-style: italic;
-    color: var(--text-color);
+    color: #2c3e50;
     margin: 0 0 var(--spacing-md);
     padding-left: var(--spacing-md);
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid #2c3e50;
 }
 
 .testimonio-autor {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e1e8ed;
     padding-top: var(--spacing-sm);
 }
 
 .testimonio-autor cite {
     font-weight: bold;
-    color: var(--primary-color);
+    color: #2c3e50;
     font-style: normal;
 }
 
 .testimonio-autor .cargo {
-    color: var(--text-color);
+    color: #34495e;
     margin: var(--spacing-xs) 0;
 }
 
 .testimonio-autor .contexto {
     font-size: 0.9em;
-    color: #666;
+    color: #7f8c8d;
 }
