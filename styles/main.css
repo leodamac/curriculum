@@ -498,9 +498,50 @@ button:hover {
     font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
-    .video-container iframe,
-    .mapa-container iframe {
-        height: 250px;
-    }
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.testimonio {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-5px);
+}
+
+.testimonio blockquote {
+    font-style: italic;
+    color: var(--text-color);
+    margin: 0 0 var(--spacing-md);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--primary-color);
+}
+
+.testimonio-autor {
+    border-top: 1px solid #eee;
+    padding-top: var(--spacing-sm);
+}
+
+.testimonio-autor cite {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+.testimonio-autor .cargo {
+    color: var(--text-color);
+    margin: var(--spacing-xs) 0;
+}
+
+.testimonio-autor .contexto {
+    font-size: 0.9em;
+    color: #666;
 }
