@@ -521,7 +521,6 @@ button:hover {
 
 .testimonio blockquote {
     font-style: italic;
-    color: #2c3e50;
     margin: 0 0 var(--spacing-md);
     padding-left: var(--spacing-md);
     border-left: 3px solid #2c3e50;
@@ -534,16 +533,13 @@ button:hover {
 
 .testimonio-autor cite {
     font-weight: bold;
-    color: #2c3e50;
     font-style: normal;
 }
 
 .testimonio-autor .cargo {
-    color: #34495e;
     margin: var(--spacing-xs) 0;
 }
 
 .testimonio-autor .contexto {
     font-size: 0.9em;
-    color: #7f8c8d;
 }
