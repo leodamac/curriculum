@@ -181,7 +181,7 @@ h2 {
 footer {
     text-align: center;
     padding: 18px 0;
-    background: linear-gradient(90deg, #35424a 60%, #6dd5ed 100%);
+    background: linear-gradient(90deg, var(--primary-color) 60%, var(--secondary-color) 100%);
     color: #fff;
     font-size: 1em;
     margin-top: 40px;
